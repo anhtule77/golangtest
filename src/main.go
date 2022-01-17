@@ -1,10 +1,9 @@
 package main
 
 import (
+	"github.com/gorilla/websocket"
 	"log"
 	"net/http"
-
-	"github.com/gorilla/websocket"
 )
 
 var clients = make(map[*websocket.Conn]bool) // khai bao  bien toan cuc dang map, key dang con tro, value kieu bool,
